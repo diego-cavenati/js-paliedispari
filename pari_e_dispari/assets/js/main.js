@@ -9,7 +9,7 @@ if (userNumber > 5 || userNumber == 0) {
     alert("Solo numeri da 1 a 5!")
 }
 
-// Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione)
+// Generiamo un numero random (sempre da 1 a 5) per il computer
 function generateRandomNumber(min, max){
     return Math.floor(Math.random() * (max - min) ) + min;
 }
@@ -23,8 +23,6 @@ function oddOrEven() {
 
     // verifico se il numero è pari o dispari
     if (sum % 2 == 0) {
-        // console.log("Il numero è pari")
-        // return `pari`
         return true
     } 
 
