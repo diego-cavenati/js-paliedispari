@@ -4,14 +4,13 @@
 // Chiedo all'utente una parola
 const userWord = prompt("Inserisci una parola")
 
-const reverseUserWord = [userWord];
-console.log(reverseUserWord);
-
-
 // creo una funzione per capire se la parola è palindroma
 function PalindromeOrNot() {
 
-    if (userWord === reverseUserWord) {
+    const reverseUserWord = userWord.split("").reverse().join("");
+    console.log(reverseUserWord);
+
+    if (userWord == reverseUserWord) {
         return true;
     }
 
