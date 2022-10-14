@@ -4,6 +4,11 @@
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. 
 const userNumber = Number(prompt("inserisci un numero da 1 a 5"));
 
+// Verificare che il numero inserito sia tra 1 e 5
+if (userNumber > 5 || userNumber == 0) {
+    alert("Solo numeri da 1 a 5!")
+}
+
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione)
 function generateRandomNumber(min, max){
     return Math.floor(Math.random() * (max - min) ) + min;
@@ -28,7 +33,7 @@ function oddOrEven() {
 
 // Dichiariamo chi ha vinto.
 if (oddOrEven(sum)) {
-    console.log("hai inserito un numero pari");
+    console.log("pari");
 } else {
-    console.log("hai inserito un numero dispari");
+    console.log("dispari");
 }
